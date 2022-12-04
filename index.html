@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>KrestZeroGame</title>
+</head>
+<body>
+    <section class="gamePage">
+        <div class="game" id="gameFull">
+            <div class="game-title">
+                <div class="score">
+                    <div class="Player1 player">
+                        <h3 class="player-name blue" id="Player1-name">Player-1: </h3>
+                        <h4 class="scorePlayer" id="score1">0</h4>
+                    </div>
+                    <div class="Player2 player">
+                        <h3 class="player-name" id="Player2-name">Player-2: </h3>
+                        <h4 class="Player2_score scorePlayer" id="score2">0</h4>
+                    </div>
+                </div>
+                <div class="time" id="time">
+                    <span id="hours">00</span>:<span id="minuts">00</span>:<span id="seconds">00</span>
+                </div>
+            </div>
+            <div class="game-body">
+                <div class="game-field" id="field">
+                    <div class="column">
+                        <div class="cell" id="1"></div>
+                        <div class="cell" id="4"></div>
+                        <div class="cell" id="7"></div>
+                    </div>
+                    <div class="column">
+                        <div class="cell" id="2"></div>
+                        <div class="cell" id="5"></div>
+                        <div class="cell" id="8"></div>
+                    </div>
+                    <div class="column">
+                        <div class="cell" id="3"></div>
+                        <div class="cell" id="6"></div>
+                        <div class="cell" id="9"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <div class="reset" id="btn">reset</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
