@@ -49,10 +49,19 @@ let PlayerState = false
 const field = document.getElementById('field')
 
 field.addEventListener('click', (e) => {
-    !PlayerState ? PlayerOne.arr.push(e.target.id) : PlayerTwo.arr.push(e.target.id)
-    !PlayerState ? e.target.innerText = 'X' : e.target.innerText = 'O'
-    !PlayerState ? cheakCombination(PlayerOne) : cheakCombination(PlayerTwo)
-    PlayerState ? PlayerState = false : PlayerState = true
+    if(!PlayerState){
+        PlayerOne.arr.push(e.target.id)
+        e.target.innerText = 'X'
+        cheakCombination(PlayerOne)
+        PlayerState = true
+    }
+    else{
+        PlayerTwo.arr.push(e.target.id)
+        e.target.innerText = 'O'
+        cheakCombination(PlayerTwo)
+        PlayerState = false
+    }
+    
     fieldCheak()
 })
 
