@@ -1,3 +1,3 @@
-# Git and GitHub Course
+# Cross_and_Zero
 
-Crash course for Git
+Simple testing website.
