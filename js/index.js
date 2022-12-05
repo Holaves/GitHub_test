@@ -116,3 +116,6 @@ document.getElementById('btn').addEventListener('click', () => {
     PlayerTwo.ElScore.innerText = '0'
 
 })
+
+
+console.log('Hello!, what are you doing here?')
